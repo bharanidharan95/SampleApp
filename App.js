@@ -20,6 +20,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <GoalInput onAppGoal = {addGoalHandler}/>
+
+
+      
       <FlatList
         keyExtractor={(item, index) => item.uid}
         data={courseGoals}
